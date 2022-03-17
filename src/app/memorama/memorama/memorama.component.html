@@ -1,0 +1,120 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12 bg-fondo-juego2 position-relative">
+      <div class="d-flex justify-content-between">
+        <div class="">
+          <img
+            src="./assets/imagenes/juego2/logo-mente.png"
+            class="img-fluid col-6"
+            alt="logo-mente"
+          />
+        </div>
+        <div class="d-flex justify-content-end align-items-start">
+          <img
+            src="./assets/imagenes/juego2/logo.png"
+            class="img-fluid col-6"
+            alt="logo-centelsa"
+          />
+        </div>
+      </div>
+      <div class="row mt-5 mb-3">
+        <div class="col-lg-11">
+          <div class="grid pb-2">
+            <app-cartas-memorama
+              *ngFor="let c of cards; let idx = index"
+              [data]="c"
+              (cardClicked)="cardClicked(idx)"
+            ></app-cartas-memorama>
+          </div>
+        </div>
+        <div class="col-lg-1 px-4 d-flex align-items-end">
+          <div class="d-flex flex-column align-items-center">
+            <div class="position-relative">
+              <img
+                src="./assets/imagenes/juego2/reloj.png"
+                class="img-fluid"
+                alt="reloj"
+              />
+              <h2 class="mb-0 position-absolute ajustar-tiempo">
+                {{ segundos }}
+              </h2>
+            </div>
+            <div>
+              <a (click)="reset()" class="cursor-pointer">
+                <img
+                  src="./assets/imagenes/juego2/reinicia_regresa.png"
+                  class="img-fluid"
+                  alt="reiniciar"
+                />
+              </a>
+            </div>
+            <div>
+              <a [routerLink]="['']">
+                <img
+                  src="./assets/imagenes/juego2/home.png"
+                  class="img-fluid"
+                  alt="home"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-9">
+          <img
+            src="./assets/imagenes/juego2/sello.png"
+            class="img-fluid"
+            alt="sello"
+          />
+        </div>
+        <div class="col-lg-3">
+          <div class="d-flex align-items-center" style="gap: 13px">
+            <div>
+              <a href="#">
+                <img
+                  src="./assets/imagenes/juego2/fb.png"
+                  class="img-fluid"
+                  alt="facebook"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  src="./assets/imagenes/juego2/ins.png"
+                  class="img-fluid"
+                  alt="instagram"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#"
+                ><img
+                  src="./assets/imagenes/juego2/tw.png"
+                  class="img-fluid"
+                  alt="twitter"
+              /></a>
+            </div>
+            <div>
+              <a href="#"
+                ><img
+                  src="./assets/imagenes/juego2/link.png"
+                  class="img-fluid"
+                  alt="linkedin"
+              /></a>
+            </div>
+            <div>
+              <a href="#"
+                ><img
+                  src="./assets/imagenes/juego2/you.png"
+                  class="img-fluid"
+                  alt="youtube"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

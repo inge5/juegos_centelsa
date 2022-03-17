@@ -1,0 +1,31 @@
+.bg-fondo-juego2 {
+  background-image: url(../../../assets/imagenes/juego2/fondo_juego.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.logo-mente {
+  top: 0;
+  left: 0;
+}
+.logo-centelsa {
+  top: 0;
+  right: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 130px);
+  gap: 16px;
+
+  justify-content: center;
+}
+.ajustar-tiempo {
+  top: 25px;
+  right: 16px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(4, 80px);
+  }
+}
