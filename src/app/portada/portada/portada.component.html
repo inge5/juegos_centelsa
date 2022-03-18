@@ -18,11 +18,37 @@
     </div>
     <div class="col-lg-6 position-relative p-0">
       <img
-        src="./assets/imagenes/juego2/portadaJuego2.png"
+        src="./assets/imagenes/juego2/fondo-portada.png"
         class="img-fluid"
         alt="portadaJuego2"
       />
-      <div class="col-4 position-absolute" style="bottom: 8%; right: 30%">
+      <img
+        src="./assets/imagenes/juego2/truenos-portada.png"
+        alt="truenos"
+        class="img-fluid position-absolute"
+        style="left: 0"
+      />
+      <img
+        src="./assets/imagenes/juego2/cerebro-portada.png"
+        alt="cerebro"
+        class="img-fluid position-absolute"
+        style="left: 0"
+      />
+      <img
+        src="./assets/imagenes/juego2/cartas-portada.png"
+        alt="cartas"
+        class="img-fluid position-absolute"
+        style="left: 0"
+      />
+      <a [routerLink]="['memorama']" class="cambiar-imagen">
+        <img
+          src="./assets/imagenes/juego2/boton-portada.png"
+          alt="boton-rojo"
+          class="img-fluid position-absolute"
+          style="left: 0"
+        />
+      </a>
+      <!-- <div class="position-absolute" style="bottom: 8%; right: 30%">
         <a [routerLink]="['memorama']">
           <img
             src="./assets/imagenes/juego2/play.png"
@@ -30,7 +56,7 @@
             alt="play2"
           />
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
