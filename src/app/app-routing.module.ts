@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AhorcadoRoutingModule } from './ahorcado/ahorcado-routing.module';
 import { AhorcadoComponent } from './ahorcado/ahorcado/ahorcado.component';
+import { GanaJuego1RoutingModule } from './gana-juego1/gana-juego1-routing.module';
 import { GanaJuego2RoutingModule } from './gana-juego2/gana-juego2-routing.module';
 import { MemoramaRoutingModule } from './memorama/memorama-routing.module';
+import { PierdeJuego1RoutingModule } from './pierde-juego1/pierde-juego1-routing.module';
 import { PierdeJuego2RoutingModule } from './pierde-juego2/pierde-juego2-routing.module';
 import { PortadaRoutingModule } from './portada/portada-routing.module';
 
@@ -21,9 +23,7 @@ const routes: Routes = [
   {
     path: 'ahorcado',
     loadChildren: () =>
-      import('./ahorcado/ahorcado-routing.module').then(
-        (m) => m.AhorcadoRoutingModule
-      ),
+      import('./ahorcado/ahorcado.module').then((m) => m.AhorcadoModule),
   },
   {
     path: 'gana',
@@ -39,6 +39,25 @@ const routes: Routes = [
         (m) => m.PierdeJuego2Module
       ),
   },
+  {
+    path: 'gana-juego',
+    loadChildren: () =>
+      import('./gana-juego1/gana-juego1.module').then(
+        (m) => m.GanaJuego1Module
+      ),
+  },
+  {
+    path: 'pierde-juego',
+    loadChildren: () =>
+      import('./pierde-juego1/pierde-juego1.module').then(
+        (m) => m.PierdeJuego1Module
+      ),
+  },
+  {
+    path: '**',
+    redirectTo: '',
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({
@@ -48,7 +67,8 @@ const routes: Routes = [
     MemoramaRoutingModule,
     GanaJuego2RoutingModule,
     PierdeJuego2RoutingModule,
-    AhorcadoRoutingModule,
+    GanaJuego1RoutingModule,
+    PierdeJuego1RoutingModule,
   ],
   exports: [RouterModule],
 })

@@ -19,11 +19,10 @@ export class AhorcadoComponent implements OnInit {
   constructor(private router: Router) {}
 
   palabras: string[] = [
-    'casa azul',
-    // 'Electromagnetismo',
-    // 'Reglamento tecnico de instalaciones electricas',
-    // 'Cables para energias renovables',
-    // 'Cables de energia y telecomunicaciones',
+    'Electromagnetismo',
+    'Reglamento tecnico de instalaciones electricas',
+    'Cables para energias renovables',
+    'Cables de energia y telecomunicaciones',
   ];
 
   ngOnInit(): void {
@@ -83,6 +82,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -113,6 +113,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -142,6 +143,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -171,6 +173,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -200,6 +203,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -229,6 +233,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -258,6 +263,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -287,6 +293,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -316,6 +323,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -345,6 +353,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -374,6 +383,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -403,6 +413,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -432,6 +443,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -461,6 +473,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -490,6 +503,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -519,6 +533,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -548,6 +563,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -577,6 +593,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -606,6 +623,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -635,6 +653,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -664,6 +683,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -693,6 +713,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -722,6 +743,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -751,6 +773,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -780,6 +803,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -809,6 +833,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
@@ -838,6 +863,7 @@ export class AhorcadoComponent implements OnInit {
         if (this.palabraConGuiones.indexOf('_ ') < 0) {
           alert('GANASTE');
           clearInterval(this.interval);
+          this.router.navigateByUrl('gana-juego');
         }
       }
     });
