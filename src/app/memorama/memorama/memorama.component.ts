@@ -102,7 +102,6 @@ export class MemoramaComponent implements OnInit, OnDestroy {
         this.reset();
         this.router.navigateByUrl('pierde');
       }
-      console.log(this.tiempo.asSeconds());
     }, 1000);
   }
   reset() {

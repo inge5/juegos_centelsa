@@ -23,4 +23,8 @@ export class PortadaComponent implements OnInit {
       );
     });
   }
+
+  cambiarImagen(tipoJuego: string, nombreBtn: string, idImg: string) {
+    $(`#${idImg}`).attr('src', `./assets/imagenes/${tipoJuego}/${nombreBtn}`);
+  }
 }

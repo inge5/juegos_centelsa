@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AhorcadoRoutingModule } from './ahorcado/ahorcado-routing.module';
+import { AhorcadoComponent } from './ahorcado/ahorcado/ahorcado.component';
 import { GanaJuego2RoutingModule } from './gana-juego2/gana-juego2-routing.module';
 import { MemoramaRoutingModule } from './memorama/memorama-routing.module';
 import { PierdeJuego2RoutingModule } from './pierde-juego2/pierde-juego2-routing.module';
@@ -15,6 +17,13 @@ const routes: Routes = [
     path: 'memorama',
     loadChildren: () =>
       import('./memorama/memorama.module').then((m) => m.MemoramaModule),
+  },
+  {
+    path: 'ahorcado',
+    loadChildren: () =>
+      import('./ahorcado/ahorcado-routing.module').then(
+        (m) => m.AhorcadoRoutingModule
+      ),
   },
   {
     path: 'gana',
@@ -39,6 +48,7 @@ const routes: Routes = [
     MemoramaRoutingModule,
     GanaJuego2RoutingModule,
     PierdeJuego2RoutingModule,
+    AhorcadoRoutingModule,
   ],
   exports: [RouterModule],
 })
