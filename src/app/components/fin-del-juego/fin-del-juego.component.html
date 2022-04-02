@@ -2,12 +2,43 @@
   <div class="row">
     <div class="col-lg-12 bg-fondo-juego2">
       <div class="d-flex justify-content-center align-items-start">
-        <div>
+        <div class="position-relative">
           <img
-            [src]="imagenFinal"
+            [src]="imagenTrueno"
             alt="gana"
             class="img-fluid"
             style="width: 1000px; margin: auto; display: block"
+          />
+          <img
+            [src]="imagenTitulo"
+            alt="gana"
+            class="img-fluid position-absolute"
+            style="
+              width: 1000px;
+              margin: auto;
+              display: block;
+              bottom: 0;
+              z-index: 1;
+            "
+          />
+          <img
+            [src]="imagenCentelso"
+            alt="gana"
+            class="img-fluid position-absolute"
+            style="width: 1000px; margin: auto; display: block; bottom: 0"
+          />
+          <img
+            [src]="imagenCerebro"
+            alt="gana"
+            class="img-fluid position-absolute"
+            style="width: 1000px; margin: auto; display: block; bottom: 0"
+          />
+          <img
+            *ngIf="imagenSerpentina !== ''"
+            [src]="imagenSerpentina"
+            alt="gana"
+            class="img-fluid position-absolute"
+            style="width: 1000px; margin: auto; display: block; bottom: 0"
           />
         </div>
         <div class="position-absolute alinear-logo-centelsa p-4">

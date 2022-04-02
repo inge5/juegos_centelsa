@@ -6,7 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./fin-del-juego.component.scss'],
 })
 export class FinDelJuegoComponent implements OnInit {
-  @Input() imagenFinal: string = '';
+  @Input() imagenTrueno: string = '';
+  @Input() imagenTitulo: string = '';
+  @Input() imagenCentelso: string = '';
+  @Input() imagenCerebro: string = '';
+  @Input() imagenSerpentina: string = '';
   constructor() {}
 
   ngOnInit(): void {}

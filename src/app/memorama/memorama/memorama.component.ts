@@ -9,7 +9,7 @@ import * as moment from 'moment';
   styleUrls: ['./memorama.component.scss'],
 })
 export class MemoramaComponent implements OnInit, OnDestroy {
-  cardImages = [
+  cardImagesAux = [
     '1.png',
     '2.png',
     '3.png',
@@ -18,7 +18,14 @@ export class MemoramaComponent implements OnInit, OnDestroy {
     '6.png',
     '7.png',
     '8.png',
+    '9.png',
+    '10.png',
+    '11.png',
+    '12.png',
+    '13.png',
+    '14.png',
   ];
+  cardImages: string[] = [];
   tiempo: moment.Duration;
   interval: any;
   segundos: number = 60;
@@ -28,7 +35,14 @@ export class MemoramaComponent implements OnInit, OnDestroy {
   movimientos: number = 0;
   desaciertos: number = 0;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    for (let i = 0; i < 8; i++) {
+      this.cardImages[i] =
+        this.cardImagesAux[
+          Math.floor(Math.random() * this.cardImagesAux.length)
+        ];
+    }
+  }
   ngOnDestroy(): void {
     this.reset();
   }
@@ -59,7 +73,6 @@ export class MemoramaComponent implements OnInit, OnDestroy {
   }
   cardClicked(index: number): void {
     if (!this.interval) {
-      console.log('no existe intervalo, se creó');
       this.contador();
     }
     const cardInfo = this.cards[index];
@@ -79,6 +92,13 @@ export class MemoramaComponent implements OnInit, OnDestroy {
     setTimeout(() => {
       const cardOne = this.flippedCards[0];
       const cardTwo = this.flippedCards[1];
+      if (
+        cardOne.imageId === cardTwo.imageId &&
+        cardOne.imageId === '9.png' &&
+        cardTwo.imageId === '9.png'
+      ) {
+        this.router.navigateByUrl('gana');
+      }
       const nextState =
         cardOne.imageId === cardTwo.imageId ? 'matched' : 'default';
       cardOne.state = cardTwo.state = nextState;
