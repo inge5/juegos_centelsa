@@ -74,9 +74,7 @@
         </div>
       </div>
       <div class="row">
-        <div
-          class="col-lg-9 d-flex flex-column justify-content-center align-items-center"
-        >
+        <div class="col-lg-9 w-75">
           <h1
             class="text-white my-4 px-4 pb-2 mb-0"
             style="
@@ -84,185 +82,34 @@
               background: #5a5a5a;
               opacity: 0.7;
               height: 141px;
+              overflow: auto;
             "
-          >
-            {{ palabraConGuiones }}
-          </h1>
+            [innerText]="palabraConGuiones"
+          ></h1>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-9 mt-2">
           <div
-            class="d-flex flex-wrap justify-content-center align-items-center"
+            class="d-flex flex-wrap justify-content-center align-items-center px-4 pb-4"
             style="
               gap: 13px;
-              background-color: #1481ff;
-              border: 6px solid black;
-              border-radius: 15px;
+              background-image: url(../../../assets/imagenes/juego1/JUEGO/fondo_teclado-2.png);
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              height: 268px;
             "
           >
-            <input
-              class="calcular1 btn text-white"
-              style="font-size: 37px; border: 1px solid #fff"
-              value="A"
-              type="button"
-            />
-            <input
-              class="calcular2 btn text-white"
-              style="font-size: 37px"
-              value="B"
-              type="button"
-            />
-            <input
-              class="calcular3 btn text-white"
-              style="font-size: 37px"
-              value="C"
-              type="button"
-            />
-            <input
-              class="calcular4 btn text-white"
-              style="font-size: 37px"
-              value="D"
-              type="button"
-            />
-            <input
-              class="calcular5 btn text-white"
-              style="font-size: 37px"
-              value="E"
-              type="button"
-            />
-            <input
-              class="calcular6 btn text-white"
-              style="font-size: 37px"
-              value="F"
-              type="button"
-            />
-            <input
-              class="calcular7 btn text-white"
-              style="font-size: 37px"
-              value="G"
-              type="button"
-            />
-            <input
-              class="calcular8 btn text-white"
-              style="font-size: 37px"
-              value="H"
-              type="button"
-            />
-            <input
-              class="calcular9 btn text-white"
-              style="font-size: 37px"
-              value="I"
-              type="button"
-            />
-            <input
-              class="calcular10 btn text-white"
-              style="font-size: 37px"
-              value="J"
-              type="button"
-            />
-            <input
-              class="calcular11 btn text-white"
-              style="font-size: 37px"
-              value="K"
-              type="button"
-            />
-            <input
-              class="calcular12 btn text-white"
-              style="font-size: 37px"
-              value="L"
-              type="button"
-            />
-            <input
-              class="calcular13 btn text-white"
-              style="font-size: 37px"
-              value="M"
-              type="button"
-            />
-            <input
-              class="calcular14 btn text-white"
-              style="font-size: 37px"
-              value="N"
-              type="button"
-            />
-            <input
-              class="calcular15 btn text-white"
-              style="font-size: 37px"
-              value="Ñ"
-              type="button"
-            />
-            <input
-              class="calcular16 btn text-white"
-              style="font-size: 37px"
-              value="O"
-              type="button"
-            />
-            <input
-              class="calcular17 btn text-white"
-              style="font-size: 37px"
-              value="P"
-              type="button"
-            />
-            <input
-              class="calcular18 btn text-white"
-              style="font-size: 37px"
-              value="Q"
-              type="button"
-            />
-            <input
-              class="calcular19 btn text-white"
-              style="font-size: 37px"
-              value="R"
-              type="button"
-            />
-            <input
-              class="calcular20 btn text-white"
-              style="font-size: 37px"
-              value="S"
-              type="button"
-            />
-            <input
-              class="calcular21 btn text-white"
-              style="font-size: 37px"
-              value="T"
-              type="button"
-            />
-            <input
-              class="calcular22 btn text-white"
-              style="font-size: 37px"
-              value="U"
-              type="button"
-            />
-            <input
-              class="calcular23 btn text-white"
-              style="font-size: 37px"
-              value="V"
-              type="button"
-            />
-            <input
-              class="calcular24 btn text-white"
-              style="font-size: 37px"
-              value="W"
-              type="button"
-            />
-            <input
-              class="calcular25 btn text-white"
-              style="font-size: 37px"
-              value="X"
-              type="button"
-            />
-            <input
-              class="calcular26 btn text-white"
-              style="font-size: 37px"
-              value="Y"
-              type="button"
-            />
-            <input
-              class="calcular27 btn text-white"
-              style="font-size: 37px"
-              value="Z"
-              type="button"
-            />
+            <ng-container *ngFor="let abc of alfabeto">
+              <input
+                class="calcular{{ abc.id }} btn text-white big_noodle_titling"
+                (click)="colocarLetra('.calcular' + abc.id, abc.letra)"
+                style="font-size: 55px; height: 68px"
+                [value]="abc.letra"
+                type="button"
+              />
+            </ng-container>
           </div>
         </div>
         <div class="col-lg-3">

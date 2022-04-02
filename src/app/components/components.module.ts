@@ -6,8 +6,16 @@ import { RouterModule } from '@angular/router';
 import { FinDelJuego1Component } from './fin-del-juego1/fin-del-juego1.component';
 
 @NgModule({
-  declarations: [CartasMemoramaComponent, FinDelJuegoComponent, FinDelJuego1Component],
+  declarations: [
+    CartasMemoramaComponent,
+    FinDelJuegoComponent,
+    FinDelJuego1Component,
+  ],
   imports: [CommonModule, RouterModule],
-  exports: [CartasMemoramaComponent, FinDelJuegoComponent],
+  exports: [
+    CartasMemoramaComponent,
+    FinDelJuegoComponent,
+    FinDelJuego1Component,
+  ],
 })
 export class ComponentsModule {}
