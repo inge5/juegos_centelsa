@@ -1,0 +1,81 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 position-relative p-0">
+      <img
+        src="./assets/imagenes/juego1/INICIO/FONDO-INICIO.jpg"
+        class="img-fluid"
+        alt="fondo-portada"
+      />
+      <img
+        src="./assets/imagenes/juego1/INICIO/TABLERO-INICIO.png"
+        alt="tablero-portada"
+        class="img-fluid position-absolute"
+        style="left: 0"
+      />
+      <img
+        src="./assets/imagenes/juego1/INICIO/TEXTO-TRUENOS.png"
+        alt="letrero-truenos"
+        class="img-fluid position-absolute"
+        style="left: 0"
+      />
+      <a
+        [routerLink]="['ahorcado']"
+        (mouseenter)="
+          cambiarImagen('juego1/INICIO', 'BOTON-PLAY-2.png', 'juego1')
+        "
+        (mouseleave)="
+          cambiarImagen('juego1/INICIO', 'BOTON-PLAY.png', 'juego1')
+        "
+      >
+        <img
+          id="juego1"
+          src="./assets/imagenes/juego1/INICIO/BOTON-PLAY.png"
+          alt="boton-play"
+          class="img-fluid position-absolute"
+          style="left: 0; bottom: 0"
+        />
+      </a>
+    </div>
+    <div class="col-lg-6 position-relative p-0">
+      <img
+        src="./assets/imagenes/juego2/fondo-portada.png"
+        class="img-fluid"
+        alt="portadaJuego2"
+      />
+      <img
+        src="./assets/imagenes/juego2/truenos-portada.png"
+        alt="truenos"
+        class="img-fluid position-absolute"
+        style="left: 0"
+      />
+      <img
+        src="./assets/imagenes/juego2/cerebro-portada.png"
+        alt="cerebro"
+        class="img-fluid position-absolute"
+        style="left: 0"
+      />
+      <img
+        src="./assets/imagenes/juego2/cartas-portada.png"
+        alt="cartas"
+        class="img-fluid position-absolute"
+        style="left: 0"
+      />
+      <a
+        [routerLink]="['memorama']"
+        (mouseenter)="
+          cambiarImagen('juego2', 'boton-accion-portada.png', 'juego2')
+        "
+        (mouseleave)="cambiarImagen('juego2', 'boton-portada.png', 'juego2')"
+        class="cambiar-imagen"
+      >
+        <img
+          id="juego2"
+          src="./assets/imagenes/juego2/boton-portada.png"
+          alt="boton-rojo"
+          class="img-fluid position-absolute"
+          style="left: 0"
+        />
+      </a>
+    </div>
+  </div>
+</div>

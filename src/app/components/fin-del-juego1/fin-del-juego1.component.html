@@ -1,0 +1,93 @@
+<div class="container-fluid bg-fondo-gana">
+  <div class="row">
+    <div class="col-lg-12 d-flex align-items-center justify-content-end p-4">
+      <div>
+        <img
+          src="./assets/imagenes/juego1/JUEGO/LOGO-CENTELSA.png"
+          alt="logo"
+          class="img-fluid"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-9">
+      <div class="row justify-content-end">
+        <div class="col-lg-8 position-relative">
+          <img [src]="imagenPantalla" alt="pantalla" class="img-fluid" />
+          <img
+            [src]="imagenTexto"
+            alt="texto"
+            class="img-fluid position-absolute"
+            style="transform: translate(-124%, 42%); width: 438px"
+          />
+          <img
+            [src]="imagenTrueno"
+            alt="truenos"
+            class="img-fluid position-absolute"
+            style="transform: translate(-118%, 7%); width: 480px"
+          />
+        </div>
+        <div class="col-lg-4">
+          <img [src]="imagenCentelso" alt="centelso" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-lg-3 d-flex flex-column justify-content-end align-items-center"
+    >
+      <div>
+        <div>
+          <a class="cursor-pointer" [routerLink]="['/ahorcado']">
+            <img
+              src="./assets/imagenes/juego1/HA-GANADO/BOTON-REINICIA-EL-JUEGO.png"
+              alt="reiniciar"
+              class="img-fluid"
+              style="width: 70px"
+            />
+          </a>
+        </div>
+        <div>
+          <a [routerLink]="['']">
+            <img
+              src="./assets/imagenes/juego1/HA-GANADO/BOTON-HOME.png"
+              alt="Portada"
+              class="img-fluid"
+              style="width: 70px"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div
+        class="d-flex justify-content-center align-items-center p-2"
+        style="gap: 13px"
+      >
+        <div>
+          <img
+            src="./assets/imagenes/juego1/JUEGO/ICONO-SELLO.png"
+            alt="sello"
+            class="img-fluid"
+          />
+        </div>
+        <div>
+          <img
+            src="./assets/imagenes/juego1/JUEGO/LINEA.png"
+            alt="linea"
+            class="img-fluid"
+          />
+        </div>
+        <div>
+          <img
+            src="./assets/imagenes/juego1/JUEGO/ICONO-REDES.png"
+            alt="redes"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

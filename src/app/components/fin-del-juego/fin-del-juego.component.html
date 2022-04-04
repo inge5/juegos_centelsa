@@ -1,0 +1,132 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12 bg-fondo-juego2">
+      <div class="d-flex justify-content-center align-items-start">
+        <div class="position-relative">
+          <img
+            [src]="imagenTrueno"
+            alt="gana"
+            class="img-fluid"
+            style="width: 1000px; margin: auto; display: block"
+          />
+          <img
+            [src]="imagenTitulo"
+            alt="gana"
+            class="img-fluid position-absolute"
+            style="
+              width: 1000px;
+              margin: auto;
+              display: block;
+              bottom: 0;
+              z-index: 1;
+            "
+          />
+          <img
+            [src]="imagenCentelso"
+            alt="gana"
+            class="img-fluid position-absolute"
+            style="width: 1000px; margin: auto; display: block; bottom: 0"
+          />
+          <img
+            [src]="imagenCerebro"
+            alt="gana"
+            class="img-fluid position-absolute"
+            style="width: 1000px; margin: auto; display: block; bottom: 0"
+          />
+          <img
+            *ngIf="imagenSerpentina !== ''"
+            [src]="imagenSerpentina"
+            alt="gana"
+            class="img-fluid position-absolute"
+            style="width: 1000px; margin: auto; display: block; bottom: 0"
+          />
+        </div>
+        <div class="position-absolute alinear-logo-centelsa p-4">
+          <img
+            src="./assets/imagenes/juego2/logo.png"
+            alt="logo"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+      <div
+        class="row align-items-end"
+        style="position: absolute; bottom: 1%; width: 100%"
+      >
+        <div class="col-lg-9">
+          <img
+            src="./assets/imagenes/juego2/sello.png"
+            class="img-fluid"
+            alt="sello"
+          />
+        </div>
+        <div class="col-lg-3 d-flex flex-column align-items-end">
+          <div class="col-lg-3 d-flex flex-column align-items-center">
+            <div>
+              <a class="cursor-pointer" [routerLink]="['/memorama']">
+                <img
+                  src="./assets/imagenes/juego2/reinicia_regresa.png"
+                  class="img-fluid"
+                  alt="reiniciar"
+                />
+              </a>
+            </div>
+            <div>
+              <a [routerLink]="['']">
+                <img
+                  src="./assets/imagenes/juego2/home.png"
+                  class="img-fluid"
+                  alt="home"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="d-flex align-items-center" style="gap: 13px">
+            <div>
+              <a href="#">
+                <img
+                  src="./assets/imagenes/juego2/fb.png"
+                  class="img-fluid"
+                  alt="facebook"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  src="./assets/imagenes/juego2/ins.png"
+                  class="img-fluid"
+                  alt="instagram"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#"
+                ><img
+                  src="./assets/imagenes/juego2/tw.png"
+                  class="img-fluid"
+                  alt="twitter"
+              /></a>
+            </div>
+            <div>
+              <a href="#"
+                ><img
+                  src="./assets/imagenes/juego2/link.png"
+                  class="img-fluid"
+                  alt="linkedin"
+              /></a>
+            </div>
+            <div>
+              <a href="#"
+                ><img
+                  src="./assets/imagenes/juego2/you.png"
+                  class="img-fluid"
+                  alt="youtube"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
