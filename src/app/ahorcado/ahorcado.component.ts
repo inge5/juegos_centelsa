@@ -30,7 +30,6 @@ export class AhorcadoComponent implements OnInit {
       palabrasAux.push(word.palabra);
     });
     this.palabras = palabrasAux;
-    console.log(this.palabras);
     this.iniciarJuego();
   }
 
@@ -48,7 +47,7 @@ export class AhorcadoComponent implements OnInit {
     let nuevo: string = '';
     for (let i = 0; i < this.palabra.length; i++) {
       if (' ' == this.palabra[i].toUpperCase()) {
-        nuevo = nuevo + '-' + ' ';
+        nuevo = nuevo + '.' + ' ';
       } else {
         nuevo = nuevo + this.palabraConGuiones[i * 2] + ' ';
       }
@@ -68,6 +67,8 @@ export class AhorcadoComponent implements OnInit {
         nuevo = nuevo + letra + ' ';
         this.haFallado = false;
       } else {
+        console.log(letra.toUpperCase());
+        console.log(this.palabra[i].toUpperCase());
         nuevo = nuevo + this.palabraConGuiones[i * 2] + ' ';
       }
     }
