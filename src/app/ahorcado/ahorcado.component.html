@@ -1,181 +1,188 @@
 <div class="container-fluid bg-fondo-ahorcado">
-  <div class="row">
-    <div class="col-lg-4 position-relative">
-      <img
-        src="./assets/imagenes/juego1/JUEGO/CAPSULA-CENTELSO-CUANDO-NO-ATINAN.png"
-        alt="capsula"
-        class="img-fluid carga-centelso"
-        style="left: 0; bottom: 0"
-      />
-      <img
-        *ngIf="intentos === 0"
-        src="./assets/imagenes/juego1/JUEGO/CARGADOR-1.png"
-        alt="carga"
-        class="img-fluid position-absolute"
-        style="left: 0; bottom: 0"
-      />
-      <img
-        *ngIf="intentos === 1"
-        src="./assets/imagenes/juego1/JUEGO/CARGADOR-2.png"
-        alt="carga1"
-        class="img-fluid position-absolute"
-        style="left: 0; bottom: 0"
-      />
-      <img
-        *ngIf="intentos === 2"
-        src="./assets/imagenes/juego1/JUEGO/CARGADOR-3.png"
-        alt="carga2"
-        class="img-fluid position-absolute"
-        style="left: 0; bottom: 0"
-      />
-      <img
-        *ngIf="intentos === 3"
-        src="./assets/imagenes/juego1/JUEGO/CARGADOR-4.png"
-        alt="carga3"
-        class="img-fluid position-absolute"
-        style="left: 0; bottom: 0"
-      />
-      <img
-        *ngIf="intentos === 4"
-        src="./assets/imagenes/juego1/JUEGO/CARGADOR-5.png"
-        alt="carga4"
-        class="img-fluid position-absolute"
-        style="left: 0; bottom: 0"
-      />
-      <img
-        *ngIf="intentos === 5"
-        src="./assets/imagenes/juego1/JUEGO/CARGADOR-6.png"
-        alt="carga5"
-        class="img-fluid position-absolute"
-        style="left: 0; bottom: 0"
-      />
-      <img
-        *ngIf="intentos === 6"
-        src="./assets/imagenes/juego1/JUEGO/CARGADOR-7.png"
-        alt="carga6"
-        class="img-fluid position-absolute"
-        style="left: 0; bottom: 0"
-      />
-    </div>
-    <div class="col-lg-8">
-      <div class="row justify-content-between">
-        <div class="col-lg-6">
+  <div class="d-flex flex-column align-items-around" style="gap: 38px">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-4 d-flex justify-content-end">
+        <div class="">
           <img
             src="./assets/imagenes/juego1/JUEGO/PANTALLA-SUPERIOR.png"
             alt="banner-superior"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-6">
+        <div class="p-4">
           <img
             src="./assets/imagenes/juego1/JUEGO/LOGO-CENTELSA.png"
             alt="logo-centelsa"
           />
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-9 w-75">
-          <h1
-            class="text-white my-4 px-4 pb-2 mb-0"
-            style="
-              font-size: 37px;
-              background: #5a5a5a;
-              opacity: 0.7;
-              height: 141px;
-              overflow: auto;
-            "
-            [innerHtml]="palabraConGuiones"
-          ></h1>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 position-relative">
+        <img
+          src="./assets/imagenes/juego1/JUEGO/CAPSULA-CENTELSO-CUANDO-NO-ATINAN.png"
+          alt="capsula"
+          class="img-fluid position-absolute"
+          style="left: 20%; top: 0; width: 373px"
+        />
+        <img
+          *ngIf="intentos === 0"
+          src="./assets/imagenes/juego1/JUEGO/CARGADOR-1.png"
+          alt="carga"
+          class="img-fluid position-absolute"
+          style="left: 20%; top: 0; width: 373px"
+        />
+        <img
+          *ngIf="intentos === 1"
+          src="./assets/imagenes/juego1/JUEGO/CARGADOR-2.png"
+          alt="carga1"
+          class="img-fluid position-absolute"
+          style="left: 20%; top: 0; width: 373px"
+        />
+        <img
+          *ngIf="intentos === 2"
+          src="./assets/imagenes/juego1/JUEGO/CARGADOR-3.png"
+          alt="carga2"
+          class="img-fluid position-absolute"
+          style="left: 20%; top: 0; width: 373px"
+        />
+        <img
+          *ngIf="intentos === 3"
+          src="./assets/imagenes/juego1/JUEGO/CARGADOR-4.png"
+          alt="carga3"
+          class="img-fluid position-absolute"
+          style="left: 20%; top: 0; width: 373px"
+        />
+        <img
+          *ngIf="intentos === 4"
+          src="./assets/imagenes/juego1/JUEGO/CARGADOR-5.png"
+          alt="carga4"
+          class="img-fluid position-absolute"
+          style="left: 20%; top: 0; width: 373px"
+        />
+        <img
+          *ngIf="intentos === 5"
+          src="./assets/imagenes/juego1/JUEGO/CARGADOR-6.png"
+          alt="carga5"
+          class="img-fluid position-absolute"
+          style="left: 20%; top: 0; width: 373px"
+        />
+        <img
+          *ngIf="intentos === 6"
+          src="./assets/imagenes/juego1/JUEGO/CARGADOR-7.png"
+          alt="carga6"
+          class="img-fluid position-absolute"
+          style="left: 20%; top: 0; width: 373px"
+        />
       </div>
-      <div class="row">
-        <div class="col-lg-9 mt-2">
-          <div
-            class="d-flex flex-wrap justify-content-center align-items-center px-4 pb-4"
-            style="
-              gap: 13px;
-              background-image: url(./assets/imagenes/juego1/JUEGO/fondo_teclado-2.png);
-              background-size: cover;
-              background-position: center;
-              background-repeat: no-repeat;
-              height: 268px;
-            "
-          >
-            <ng-container *ngFor="let abc of alfabeto">
-              <input
-                class="calcular{{ abc.id }} btn text-white big_noodle_titling"
-                (click)="colocarLetra('.calcular' + abc.id, abc.letra)"
-                style="font-size: 55px; height: 68px"
-                [value]="abc.letra"
-                type="button"
-              />
-            </ng-container>
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="col-lg-9 w-75">
+            <h1
+              class="text-white my-4 px-4 pb-2 mb-0"
+              style="
+                font-size: 37px;
+                background: #11163a;
+                opacity: 0.7;
+                height: 141px;
+                overflow: auto;
+                border-radius: 20px;
+              "
+              [innerHtml]="palabraConGuiones"
+            ></h1>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div
-            class="d-flex flex-column justify-content-center align-items-center"
-          >
-            <div class="position-relative">
-              <img
-                src="./assets/imagenes/juego1/JUEGO/CRONOMETRO.png"
-                alt="cronometro"
-                class="img-fluid"
-                style="width: 70px"
-              />
-              <h2 class="mb-0 position-absolute ajustar-tiempo text-white">
-                {{ segundos }}
-              </h2>
+        <div class="row">
+          <div class="col-lg-9 mt-2">
+            <div
+              class="d-flex flex-wrap justify-content-center align-items-center px-4 pb-4"
+              style="
+                gap: 13px;
+                background-image: url(./assets/imagenes/juego1/JUEGO/fondo_teclado-2.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 268px;
+              "
+            >
+              <ng-container *ngFor="let abc of alfabeto">
+                <input
+                  class="calcular{{ abc.id }} btn text-white big_noodle_titling"
+                  (click)="colocarLetra('.calcular' + abc.id, abc.letra)"
+                  style="font-size: 55px; height: 68px"
+                  [value]="abc.letra"
+                  type="button"
+                />
+              </ng-container>
             </div>
-            <div>
-              <a class="cursor-pointer" (click)="reload()">
+          </div>
+          <div class="col-lg-3">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <div class="position-relative">
                 <img
-                  src="./assets/imagenes/juego1/HA-GANADO/BOTON-REINICIA-EL-JUEGO.png"
-                  alt="reiniciar"
+                  src="./assets/imagenes/juego1/JUEGO/CRONOMETRO.png"
+                  alt="cronometro"
                   class="img-fluid"
                   style="width: 70px"
                 />
-              </a>
-            </div>
-            <div>
-              <a [routerLink]="['']">
-                <img
-                  src="./assets/imagenes/juego1/HA-GANADO/BOTON-HOME.png"
-                  alt="Portada"
-                  class="img-fluid"
-                  style="width: 70px"
-                />
-              </a>
+                <h2 class="mb-0 position-absolute ajustar-tiempo text-white">
+                  {{ segundos }}
+                </h2>
+              </div>
+              <div>
+                <a class="cursor-pointer" (click)="reload()">
+                  <img
+                    src="./assets/imagenes/juego1/HA-GANADO/BOTON-REINICIA-EL-JUEGO.png"
+                    alt="reiniciar"
+                    class="img-fluid"
+                    style="width: 70px"
+                  />
+                </a>
+              </div>
+              <div>
+                <a [routerLink]="['']">
+                  <img
+                    src="./assets/imagenes/juego1/HA-GANADO/BOTON-HOME.png"
+                    alt="Portada"
+                    class="img-fluid"
+                    style="width: 70px"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-lg-12 position-absolute" style="bottom: 0">
-      <div
-        class="d-flex align-items-center justify-content-center pb-2"
-        style="gap: 13px"
-      >
-        <div>
-          <img
-            src="./assets/imagenes/juego1/JUEGO/ICONO-SELLO.png"
-            alt="sello"
-            class="img-fluid"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/imagenes/juego1/JUEGO/LINEA.png"
-            alt="linea"
-            class="img-fluid"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/imagenes/juego1/JUEGO/ICONO-REDES.png"
-            alt="redes"
-            class="img-fluid"
-          />
+    <div class="row">
+      <div class="col-lg-12">
+        <div
+          class="d-flex align-items-center justify-content-center pb-2"
+          style="gap: 13px"
+        >
+          <div>
+            <img
+              src="./assets/imagenes/juego1/JUEGO/ICONO-SELLO.png"
+              alt="sello"
+              class="img-fluid"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/imagenes/juego1/JUEGO/LINEA.png"
+              alt="linea"
+              class="img-fluid"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/imagenes/juego1/JUEGO/ICONO-REDES.png"
+              alt="redes"
+              class="img-fluid"
+            />
+          </div>
         </div>
       </div>
     </div>
